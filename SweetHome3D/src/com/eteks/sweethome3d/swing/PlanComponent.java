@@ -2030,9 +2030,6 @@ public class PlanComponent extends JComponent implements PlanView, Scrollable, P
 
       List<Selectable> printedItems = getPaintedItems();
       Rectangle2D printedItemBounds = getItemsBounds(g, printedItems);
-      if (printedItemBounds == null) {
-        printedItemBounds = new Rectangle2D.Double(0, 0, 1000, 1000);
-      }
 
       double imageableX = pageFormat.getImageableX();
       double imageableY = pageFormat.getImageableY();
